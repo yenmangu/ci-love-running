@@ -27,18 +27,72 @@ header {
 	position: fixed;
 	z-index: 99;
 	width: 100%;
-	box-shadow: 0 2px 2px #a7a7a7;
+	/* box-shadow: 0 2px 2px #a7a7a7; */
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+header a {
+	text-decoration: none;
+	color: inherit;
 }
 
 h1 {
 	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #252525;
+}
+
+#menu {
+	/* margin-top: 1em; */
+	font-size: 110%;
+	letter-spacing: 4px;
+	list-style-type: none;
+}
+
+#menu li {
+	margin-bottom: 1em;
+}
+
+#menu .active {
+	border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with dropdown toggle */
+
+nav {
+	position: absolute;
+	background-color: #ffffff;
+	width: 100%;
+	left: 0;
+	padding: 0 1rem;
+	box-shadow: 0 2px 2px #a7a7a7;
+	display: none;
+	top: 98%;
+}
+
+/* Nav toggle */
+
+#nav-toggle:checked ~ nav {
+	display: block;
+}
+
+#nav-toggle {
+	display: none;
+}
+
+.nav-toggle-label {
+	font-size: 2rem;
 }
 
 /* Main */
 main {
 	background-color: lightblue;
-	/* Make 'main' element take up any remaining space */
+	/* Make 'main' element take up any surplus remaining space */
 	flex: 1 0 auto;
+	margin-top: 37px;
 }
 
 /* Footer */
