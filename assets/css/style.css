@@ -61,7 +61,6 @@ h1 {
 }
 
 /* Navbar styles with dropdown toggle */
-
 nav {
 	position: absolute;
 	background-color: #ffffff;
@@ -69,13 +68,18 @@ nav {
 	left: 0;
 	padding: 0 1rem;
 	box-shadow: 0 2px 2px #a7a7a7;
-	display: none;
 	top: 98%;
+	/* transition: opacity 1s ease-in-out, display 1s ease-in-out;
+	transition-behavior: allow-discrete;
+	opacity: 0; */
+	display: none;
 }
 
 /* Nav toggle */
-
 #nav-toggle:checked ~ nav {
+	/* transition: opacity 1s ease-in-out, display 1s ease-in-out;
+	transition-behavior: allow-discrete;
+	opacity: 1; */
 	display: block;
 }
 
@@ -98,4 +102,29 @@ main {
 /* Footer */
 footer {
 	background-color: orange;
+}
+
+/* Media Query: tablets and larger devices (768px and up) */
+
+@media screen and (min-width: 768px) {
+	/* header */
+	nav {
+		display: block;
+		position: relative;
+		box-shadow: none;
+		width: fit-content;
+		padding-right: 1rem;
+	}
+
+	/* menu */
+	#menu {
+		display: flex;
+	}
+	#menu > li {
+		padding-left: 1rem;
+	}
+
+	.nav-toggle-label {
+		display: none;
+	}
 }
