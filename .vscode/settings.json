@@ -13,6 +13,11 @@
 		"**/CVS": true
 	},
 	"files.autoSave": "off",
-	"workbench.colorTheme": "Ayu Mirage Bordered",
-	"terminal.integrated.gpuAcceleration": "canvas"
+	"workbench.colorTheme": "Ayu Mirage Bordered"
+	// "terminal.integrated.gpuAcceleration": "canvas",
+	// "html.suggest.html5": true,
+	// "[html]": {
+	// 	"editor.suggest.insertMode": "replace",
+	// 	"editor.defaultFormatter": "vscode.html-language-features"
+	// }
 }
