@@ -1,23 +1,23 @@
 {
-	"files.exclude": {
-		"**/.DS_Store": true,
-		"**/.git": true,
-		"**/.github": true,
-		"**/.gitp*": true,
-		"**/.hg": true,
-		"**/.svn": true,
-		"**/.vscode": true,
-		"**/core.Microsoft*": true,
-		"**/core.mongo*": true,
-		"**/core.python*": true,
-		"**/CVS": true
-	},
+	// "files.exclude": {
+	// 	"**/.DS_Store": true,
+	// 	"**/.git": false,
+	// 	"**/.github": true,
+	// 	"**/.gitp*": true,
+	// 	"**/.hg": true,
+	// 	"**/.svn": true,
+	// 	"**/.vscode": false,
+	// 	"**/core.Microsoft*": true,
+	// 	"**/core.mongo*": true,
+	// 	"**/core.python*": true,
+	// 	"**/CVS": true
+	// },
 	"files.autoSave": "off",
-	"workbench.colorTheme": "Ayu Mirage Bordered"
+	"workbench.colorTheme": "Ayu Mirage Bordered",
 	// "terminal.integrated.gpuAcceleration": "canvas",
 	// "html.suggest.html5": true,
-	// "[html]": {
-	// 	"editor.suggest.insertMode": "replace",
-	// 	"editor.defaultFormatter": "vscode.html-language-features"
-	// }
+	"[html]": {
+		"editor.suggest.insertMode": "replace",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
